@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Science Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fas fa-atom"></i>
+
+            <span>Nova Science Hub</span>
+
+        </div>
+
+        <ul class="nav-links">
+
+    <li><a href="index.html">Home</a></li>
+
+    <li><a href="courses.html">Courses</a></li>
+
+    <li><a href="notes.html">Notes</a></li>
+
+    <li><a href="videos.html">Videos</a></li>
+
+    <li><a href="mcqs.html">MCQs</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Learn Physics Like Never Before
+        </h1>
+
+        <h2 id="typing"></h2>
+
+        <p>
+
+            Welcome to Nova Science Hub.
+
+            Learn Physics from Basic to Advanced
+            with concepts, animations,
+            quizzes and easy explanations.
+
+        </p>
+
+        <button id="startBtn">
+
+            Start Learning
+
+        </button>
+
+    </div>
+
+    <div class="hero-image">
+
+        <i class="fas fa-atom atom"></i>
+
+    </div>
+
+</section>
+
+<!-- Features Section starts in Part 1B -->
+ <!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <div class="section-title">
+
+        <h2>Why Choose Nova Science Hub?</h2>
+
+        <p>Learn with modern methods and real concepts.</p>
+
+    </div>
+
+    <div class="feature-container">
+
+        <div class="card">
+
+            <i class="fas fa-book-open"></i>
+
+            <h3>Easy Notes</h3>
+
+            <p>
+                Download chapter-wise notes with simple explanations.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fas fa-video"></i>
+
+            <h3>Video Lectures</h3>
+
+            <p>
+                Watch high-quality lectures anytime, anywhere.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fas fa-flask"></i>
+
+            <h3>Physics Lab</h3>
+
+            <p>
+                Learn concepts with experiments and simulations.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fas fa-question-circle"></i>
+
+            <h3>MCQs Practice</h3>
+
+            <p>
+                Test yourself with quizzes and practice tests.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about">
+
+    <div class="about-text">
+
+        <h2>About Nova Science Hub</h2>
+
+        <p>
+
+            Nova Science Hub is designed to help students understand
+            Physics in the easiest and most practical way.
+
+            Our mission is to make learning simple, enjoyable and
+            concept-based.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="stat-box">
+
+        <h2>100+</h2>
+
+        <p>Physics Topics</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <h2>500+</h2>
+
+        <p>Practice MCQs</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <h2>50+</h2>
+
+        <p>Video Lessons</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <h2>24/7</h2>
+
+        <p>Learning Support</p>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>Nova Science Hub</h2>
+
+    <p>
+
+        Learn • Explore • Discover
+
+    </p>
+
+    <div class="social-icons">
+
+        <a href="#"><i class="fab fa-facebook"></i></a>
+
+        <a href="#"><i class="fab fa-youtube"></i></a>
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+
+    </div>
+
+    <p class="copyright">
+
+        © 2026 Nova Science Hub | All Right Reserved
+
+    </p>
+
+</footer>
+<!-- =========================
+        NOVA AI CHAT
+========================= -->
+
+<!-- Floating AI Button -->
+
+<div class="ai-button" id="aiButton">
+
+    🤖
+
+</div>
+
+
+<!-- Chat Box -->
+
+<div class="ai-chat" id="aiChat">
+
+    <div class="chat-header">
+
+        <h3>🤖 Nova AI</h3>
+
+        <span id="closeChat">&times;</span>
+
+    </div>
+
+
+    <div class="chat-body" id="chatBody">
+
+        <div class="bot-message">
+
+            👋 Hello!
+
+            <br><br>
+
+            I am <b>Nova AI</b>.
+
+            Ask me any Physics question.
+
+        </div>
+
+    </div>
+
+
+    <div class="chat-footer">
+
+        <input
+
+        type="text"
+
+        id="userInput"
+
+        placeholder="Ask Physics Question...">
+
+        <button id="sendBtn">
+
+            Send
+
+        </button>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

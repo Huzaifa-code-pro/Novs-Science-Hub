@@ -1,0 +1,2121 @@
+/* ===============================
+   NOVA SCIENCE HUB
+   PART 1A
+=================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#08111f;
+    color:white;
+    overflow-x:hidden;
+
+}
+
+/*==============================
+ NAVBAR
+===============================*/
+
+header{
+
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+
+    background:rgba(8,17,31,.92);
+
+    backdrop-filter:blur(12px);
+
+    z-index:1000;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+}
+
+.navbar{
+
+    width:90%;
+    margin:auto;
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#00d4ff;
+
+}
+
+.logo i{
+
+    font-size:34px;
+
+    animation:rotateAtom 8s linear infinite;
+
+}
+
+@keyframes rotateAtom{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#00d4ff;
+
+}
+
+/*==============================
+ HERO
+===============================*/
+
+.hero{
+
+    width:90%;
+    margin:auto;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding-top:80px;
+
+}
+
+.hero-content{
+
+    width:55%;
+
+}
+
+.hero-content h1{
+
+    font-size:60px;
+
+    line-height:75px;
+
+    margin-bottom:20px;
+
+}
+
+#typing{
+
+    color:#00d4ff;
+
+    height:40px;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:20px;
+
+    line-height:35px;
+
+    color:#d9d9d9;
+
+}
+
+#startBtn{
+
+    margin-top:35px;
+
+    padding:16px 42px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#00d4ff;
+
+    color:#08111f;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+#startBtn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px #00d4ff;
+
+}
+
+.hero-image{
+
+    width:40%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.atom{
+
+    font-size:220px;
+
+    color:#00d4ff;
+
+    animation:rotateAtom 12s linear infinite;
+
+    filter:drop-shadow(0 0 25px #00d4ff);
+
+}
+/*==============================
+ FEATURES SECTION
+===============================*/
+
+.features{
+
+    width:90%;
+    margin:100px auto;
+
+}
+
+.section-title{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:45px;
+    color:#00d4ff;
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    color:#cccccc;
+    font-size:18px;
+
+}
+
+.feature-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:#111c2d;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px rgba(0,212,255,.3);
+
+}
+
+.card i{
+
+    font-size:55px;
+
+    color:#00d4ff;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    font-size:26px;
+
+}
+
+.card p{
+
+    color:#cfcfcf;
+
+    line-height:28px;
+
+}
+
+/*==============================
+ ABOUT
+===============================*/
+
+.about{
+
+    width:90%;
+
+    margin:100px auto;
+
+    text-align:center;
+
+}
+
+.about h2{
+
+    font-size:45px;
+
+    color:#00d4ff;
+
+    margin-bottom:25px;
+
+}
+
+.about p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    color:#d5d5d5;
+
+    line-height:35px;
+
+    font-size:20px;
+
+}
+
+/*==============================
+ STATS
+===============================*/
+
+.stats{
+
+    width:90%;
+
+    margin:100px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:25px;
+
+}
+
+.stat-box{
+
+    background:#111c2d;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.stat-box:hover{
+
+    transform:scale(1.05);
+
+}
+
+.stat-box h2{
+
+    color:#00d4ff;
+
+    font-size:45px;
+
+    margin-bottom:10px;
+
+}
+
+.stat-box p{
+
+    color:#d8d8d8;
+
+}
+
+/*==============================
+ FOOTER
+===============================*/
+
+footer{
+
+    background:#050b16;
+
+    margin-top:100px;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+}
+
+footer h2{
+
+    color:#00d4ff;
+
+    font-size:35px;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    color:#cfcfcf;
+
+    margin:12px 0;
+
+}
+
+.social-icons{
+
+    margin:30px 0;
+
+}
+
+.social-icons a{
+
+    color:white;
+
+    font-size:28px;
+
+    margin:0 12px;
+
+    transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+    color:#00d4ff;
+
+}
+
+/*==============================
+ MOBILE
+===============================*/
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+padding-top:130px;
+
+}
+
+.hero-content{
+
+width:100%;
+
+}
+
+.hero-image{
+
+width:100%;
+
+margin-top:50px;
+
+}
+
+.hero-content h1{
+
+font-size:42px;
+
+line-height:55px;
+
+}
+
+.atom{
+
+font-size:150px;
+
+}
+
+.navbar{
+
+flex-direction:column;
+
+height:auto;
+
+padding:20px;
+
+}
+
+.nav-links{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:18px;
+
+margin-top:15px;
+
+}
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+.about h2{
+
+font-size:34px;
+
+}
+
+}
+/*==========================================
+      PART 2A
+      PREMIUM EFFECTS
+==========================================*/
+
+
+/* Animated Background */
+
+body{
+
+    background: linear-gradient(
+        -45deg,
+        #050816,
+        #08111f,
+        #0f172a,
+        #132238
+    );
+
+    background-size:400% 400%;
+
+    animation:backgroundMove 15s ease infinite;
+
+}
+
+
+@keyframes backgroundMove{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+
+
+
+/* Smooth Section Animation */
+
+section{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* Better Button */
+
+#startBtn{
+
+letter-spacing:1px;
+
+font-weight:700;
+
+transition:.4s;
+
+}
+
+#startBtn:hover{
+
+transform:translateY(-6px) scale(1.05);
+
+}
+
+
+
+/* Cards Glow */
+
+.card{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+top:-120%;
+
+left:-50%;
+
+width:60%;
+
+height:300%;
+
+background:rgba(255,255,255,.08);
+
+transform:rotate(25deg);
+
+transition:.8s;
+
+}
+
+.card:hover::before{
+
+left:150%;
+
+}
+
+
+
+/* Statistics */
+
+.stat-box{
+
+cursor:pointer;
+
+}
+
+.stat-box:hover{
+
+box-shadow:0 0 25px rgba(0,212,255,.35);
+
+}
+
+
+
+/* Social Icons */
+
+.social-icons a{
+
+width:55px;
+
+height:55px;
+
+display:inline-flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:50%;
+
+background:#0f172a;
+
+}
+
+.social-icons a:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 20px #00d4ff;
+
+}
+
+
+
+/* Scroll Bar */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#08111f;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#00d4ff;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#00ffff;
+
+}
+
+
+
+/* Text Selection */
+
+::selection{
+
+background:#00d4ff;
+
+color:black;
+
+}
+/*==========================================
+      PART 2B
+      ADVANCED EFFECTS
+==========================================*/
+
+/* Floating Stars */
+
+.stars{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:-1;
+
+}
+
+.star{
+
+    position:absolute;
+    width:2px;
+    height:2px;
+    background:white;
+    border-radius:50%;
+    animation:twinkle 3s infinite;
+
+}
+
+@keyframes twinkle{
+
+0%,100%{
+
+opacity:.2;
+transform:scale(1);
+
+}
+
+50%{
+
+opacity:1;
+transform:scale(2);
+
+}
+
+}
+
+
+
+/* Glass Effect */
+
+.card,
+.stat-box,
+.about{
+
+backdrop-filter:blur(15px);
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+/* Logo Animation */
+
+.logo{
+
+transition:.4s;
+
+}
+
+.logo:hover{
+
+transform:scale(1.08);
+
+color:#00ffff;
+
+}
+
+
+
+/* Navigation Hover */
+
+.nav-links a{
+
+position:relative;
+
+}
+
+.nav-links a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+bottom:-6px;
+
+width:0;
+
+height:2px;
+
+background:#00d4ff;
+
+transition:.4s;
+
+}
+
+.nav-links a:hover::after{
+
+width:100%;
+
+}
+
+
+
+/* Hero Heading */
+
+.hero h1{
+
+background:linear-gradient(
+90deg,
+#ffffff,
+#00d4ff,
+#7ef9ff
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+
+
+/* Card Icons */
+
+.card i{
+
+transition:.5s;
+
+}
+
+.card:hover i{
+
+transform:rotate(360deg) scale(1.2);
+
+}
+
+
+
+/* Footer */
+
+footer{
+
+border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+/* Smooth Image */
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+
+
+/* Better Button */
+
+button{
+
+outline:none;
+
+}
+
+button:active{
+
+transform:scale(.95);
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero{
+
+padding-top:150px;
+
+}
+
+.hero-content h1{
+
+font-size:34px;
+
+line-height:45px;
+
+}
+
+.hero-content p{
+
+font-size:17px;
+
+line-height:30px;
+
+}
+
+.logo{
+
+font-size:22px;
+
+}
+
+.logo i{
+
+font-size:28px;
+
+}
+
+.card{
+
+padding:25px;
+
+}
+
+.section-title h2{
+
+font-size:30px;
+
+}
+
+footer h2{
+
+font-size:28px;
+
+}
+
+}
+
+/* ===========================
+COURSES PAGE
+=========================== */
+
+.courses-page{
+
+padding:140px 8% 80px;
+
+text-align:center;
+
+}
+
+.courses-page h1{
+
+font-size:55px;
+
+color:#25d9ff;
+
+margin-bottom:20px;
+
+}
+
+.courses-page p{
+
+font-size:20px;
+
+color:#d7d7d7;
+
+margin-bottom:60px;
+
+}
+
+.course-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.course-card{
+
+background:rgba(255,255,255,.07);
+
+padding:35px;
+
+border-radius:20px;
+
+backdrop-filter:blur(12px);
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.course-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 25px rgba(37,217,255,.35);
+
+}
+
+.course-card h3{
+
+font-size:28px;
+
+color:#25d9ff;
+
+margin-bottom:15px;
+
+}
+
+.course-card p{
+
+color:#d6d6d6;
+
+margin-bottom:25px;
+
+line-height:28px;
+
+}
+
+.course-card a{
+
+display:inline-block;
+
+padding:12px 30px;
+
+background:#25d9ff;
+
+color:#07121f;
+
+text-decoration:none;
+
+border-radius:30px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.course-card a:hover{
+
+transform:scale(1.05);
+
+}
+/* ===================================
+   COURSES PAGE - PART 1
+=================================== */
+
+.course-hero{
+
+    min-height:55vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:140px 8% 80px;
+
+}
+
+.course-hero h1{
+
+    font-size:60px;
+
+    color:#25d9ff;
+
+    margin-bottom:20px;
+
+    text-shadow:0 0 20px rgba(37,217,255,.35);
+
+}
+
+.course-hero p{
+
+    max-width:750px;
+
+    font-size:20px;
+
+    line-height:34px;
+
+    color:#d8d8d8;
+
+}
+
+
+/* ==============================
+      COURSES SECTION
+============================== */
+
+.course-section{
+
+    padding:80px 8%;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+}
+
+
+/* ==============================
+      COURSE CARD
+============================== */
+
+.course-card{
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.45s;
+
+}
+
+
+.course-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 0 30px rgba(37,217,255,.35);
+
+}
+
+
+/* ICON */
+
+.course-card i{
+
+    font-size:55px;
+
+    color:#25d9ff;
+
+    margin-bottom:20px;
+
+}
+
+
+/* TITLE */
+
+.course-card h2{
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+}
+
+
+/* PARAGRAPH */
+
+.course-card p{
+
+    color:#d8d8d8;
+
+    line-height:30px;
+
+    margin-bottom:25px;
+
+}
+
+
+/* BUTTON */
+
+.course-card a{
+
+    display:inline-block;
+
+    padding:12px 28px;
+
+    border-radius:40px;
+
+    background:#25d9ff;
+
+    color:#07121f;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.35s;
+
+}
+
+
+.course-card a:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 20px #25d9ff;
+
+}
+/* ===================================
+   COURSES PAGE - PART 2
+=================================== */
+
+
+/* ==========================
+   SEMESTER SECTION
+========================== */
+
+.semester-section{
+
+    padding:90px 8%;
+
+    text-align:center;
+
+}
+
+.semester-section h2{
+
+    font-size:45px;
+
+    color:#25d9ff;
+
+    margin-bottom:50px;
+
+}
+
+
+/* GRID */
+
+.semester-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:25px;
+
+}
+
+
+/* BUTTON */
+
+.semester-grid a{
+
+    display:block;
+
+    text-decoration:none;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    color:#ffffff;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    transition:.4s;
+
+}
+
+
+/* HOVER */
+
+.semester-grid a:hover{
+
+    background:#25d9ff;
+
+    color:#07121f;
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 25px rgba(37,217,255,.45);
+
+}
+
+
+/* ==========================
+   PAGE ANIMATION
+========================== */
+
+.course-hero,
+.course-card,
+.semester-section{
+
+    animation:fadeUp .8s ease;
+
+}
+
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+.course-hero h1{
+
+    font-size:42px;
+
+}
+
+.course-hero p{
+
+    font-size:17px;
+
+    line-height:30px;
+
+}
+
+.course-section{
+
+    grid-template-columns:1fr;
+
+}
+
+.semester-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media(max-width:600px){
+
+.semester-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.course-card{
+
+    padding:28px;
+
+}
+
+.course-card h2{
+
+    font-size:24px;
+
+}
+
+.course-card p{
+
+    font-size:16px;
+
+}
+
+}
+/* ===================================
+   NOTES PAGE - PART 1
+=================================== */
+
+/* HERO */
+
+.page-hero{
+
+    min-height:45vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:140px 8% 80px;
+
+}
+
+.page-hero h1{
+
+    font-size:58px;
+
+    color:#25d9ff;
+
+    margin-bottom:20px;
+
+    text-shadow:0 0 18px rgba(37,217,255,.35);
+
+}
+
+.page-hero p{
+
+    font-size:20px;
+
+    color:#d8d8d8;
+
+    max-width:700px;
+
+    line-height:34px;
+
+}
+
+
+/* ==============================
+      NOTES SECTION
+============================== */
+
+.notes-section{
+
+    padding:80px 8%;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+}
+
+
+/* NOTE CARD */
+
+.note-card{
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+
+.note-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px rgba(37,217,255,.35);
+
+}
+
+
+/* ICON */
+
+.note-card i{
+
+    font-size:55px;
+
+    color:#25d9ff;
+
+    margin-bottom:20px;
+
+}
+
+
+/* TITLE */
+
+.note-card h3{
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+}
+
+
+/* PARAGRAPH */
+
+.note-card p{
+
+    color:#d8d8d8;
+
+    line-height:28px;
+
+    margin-bottom:25px;
+
+}
+
+
+/* BUTTON */
+
+.note-card a{
+
+    display:inline-block;
+
+    padding:12px 28px;
+
+    background:#25d9ff;
+
+    color:#07121f;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.note-card a:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 18px #25d9ff;
+
+}
+/* ===================================
+   NOTES PAGE - PART 2
+=================================== */
+
+
+/* ==========================
+   DOWNLOAD SECTION
+========================== */
+
+.download-section{
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+.download-section h2{
+
+    font-size:45px;
+
+    color:#25d9ff;
+
+    margin-bottom:20px;
+
+}
+
+.download-section p{
+
+    font-size:18px;
+
+    color:#d8d8d8;
+
+    margin-bottom:35px;
+
+}
+
+.download-btn{
+
+    display:inline-block;
+
+    padding:16px 40px;
+
+    background:#25d9ff;
+
+    color:#07121f;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    border-radius:50px;
+
+    transition:.35s;
+
+}
+
+.download-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px rgba(37,217,255,.45);
+
+}
+
+
+/* ==========================
+   PAGE ANIMATION
+========================== */
+
+.page-hero,
+.note-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+.page-hero h1{
+
+    font-size:42px;
+
+}
+
+.page-hero p{
+
+    font-size:17px;
+
+    line-height:30px;
+
+}
+
+.notes-section{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.note-card{
+
+    padding:28px;
+
+}
+
+.note-card h3{
+
+    font-size:24px;
+
+}
+
+.note-card p{
+
+    font-size:16px;
+
+}
+
+.download-btn{
+
+    width:100%;
+
+}
+
+}
+/* ===================================
+   NOVA AI CHAT - PART 1
+=================================== */
+
+
+/* Floating Button */
+
+.ai-button{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:#00d4ff;
+
+    color:#08111f;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+    box-shadow:0 0 25px rgba(0,212,255,.5);
+
+    transition:.35s;
+
+    z-index:9999;
+
+}
+
+.ai-button:hover{
+
+    transform:scale(1.1);
+
+    box-shadow:0 0 40px rgba(0,212,255,.8);
+
+}
+
+
+/* Chat Box */
+
+.ai-chat{
+
+    position:fixed;
+
+    bottom:120px;
+
+    right:30px;
+
+    width:350px;
+
+    height:500px;
+
+    background:rgba(8,17,31,.95);
+
+    border:1px solid rgba(0,212,255,.3);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(15px);
+
+    display:none;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    box-shadow:0 0 30px rgba(0,212,255,.25);
+
+    z-index:9999;
+
+}
+
+
+/* Header */
+
+.chat-header{
+
+    background:#00d4ff;
+
+    color:#08111f;
+
+    padding:18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.chat-header h3{
+
+    font-size:22px;
+
+}
+
+#closeChat{
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+
+/* Chat Body */
+
+.chat-body{
+
+    flex:1;
+
+    padding:20px;
+
+    overflow-y:auto;
+
+}
+
+
+/* Bot Message */
+
+.bot-message{
+
+    background:rgba(255,255,255,.08);
+
+    padding:15px;
+
+    border-radius:15px;
+
+    line-height:28px;
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+
+/* Footer */
+
+.chat-footer{
+
+    display:flex;
+
+    padding:15px;
+
+    gap:10px;
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+}
+
+.chat-footer input{
+
+    flex:1;
+
+    padding:12px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+    background:#13253d;
+
+    color:white;
+
+}
+
+.chat-footer button{
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#00d4ff;
+
+    color:#08111f;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.chat-footer button:hover{
+
+    transform:scale(1.05);
+
+}
+/* ===================================
+   CONTACT PAGE - PART 1
+=================================== */
+
+/* CONTACT HERO */
+
+.contact-hero{
+
+    min-height:45vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:140px 8% 80px;
+
+}
+
+.contact-hero h1{
+
+    font-size:58px;
+
+    color:#00d4ff;
+
+    margin-bottom:20px;
+
+    text-shadow:0 0 20px rgba(0,212,255,.35);
+
+}
+
+.contact-hero p{
+
+    max-width:700px;
+
+    font-size:20px;
+
+    line-height:34px;
+
+    color:#d6d6d6;
+
+}
+
+
+/* ==========================
+   CONTACT CARDS
+========================== */
+
+.contact-page{
+
+    padding:80px 8%;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.contact-card{
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px rgba(0,212,255,.35);
+
+}
+
+.contact-card i{
+
+    font-size:55px;
+
+    color:#00d4ff;
+
+    margin-bottom:20px;
+
+}
+
+.contact-card h3{
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+    color:white;
+
+}
+
+.contact-card p{
+
+    font-size:18px;
+
+    color:#d6d6d6;
+
+    line-height:30px;
+
+}
